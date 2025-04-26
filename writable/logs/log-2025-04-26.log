@@ -202,3 +202,78 @@ in APPPATH\Controllers\Home.php on line 11.
  5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Project CI\\TugasBesarPWL\\public\\index.php')
+CRITICAL - 2025-04-26 10:09:03 --> ErrorException: Undefined variable $verdor
+[Method: GET, Route: vendor]
+in APPPATH\Views\vendor.php on line 245.
+ 1 APPPATH\Views\vendor.php(245): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $verdor', 'C:\\Project CI\\TugasBesarPWL\\app\\Views\\vendor.php', 245)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Project CI\\TugasBesarPWL\\app\\Views\\vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('vendor', [], true)
+ 5 APPPATH\Controllers\VendorController.php(14): view('vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VendorController->vendor()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Project CI\\TugasBesarPWL\\public\\index.php')
+CRITICAL - 2025-04-26 10:10:13 --> ErrorException: Undefined variable $verdors
+[Method: GET, Route: vendor]
+in APPPATH\Views\vendor.php on line 245.
+ 1 APPPATH\Views\vendor.php(245): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $verdors', 'C:\\Project CI\\TugasBesarPWL\\app\\Views\\vendor.php', 245)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Project CI\\TugasBesarPWL\\app\\Views\\vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('vendor', [], true)
+ 5 APPPATH\Controllers\VendorController.php(14): view('vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VendorController->vendor()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Project CI\\TugasBesarPWL\\public\\index.php')
+CRITICAL - 2025-04-26 10:10:59 --> ErrorException: Undefined variable $verdors
+[Method: GET, Route: vendor]
+in APPPATH\Views\vendor.php on line 245.
+ 1 APPPATH\Views\vendor.php(245): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $verdors', 'C:\\Project CI\\TugasBesarPWL\\app\\Views\\vendor.php', 245)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Project CI\\TugasBesarPWL\\app\\Views\\vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('vendor', [], true)
+ 5 APPPATH\Controllers\VendorController.php(14): view('vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VendorController->vendor()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Project CI\\TugasBesarPWL\\public\\index.php')
+CRITICAL - 2025-04-26 10:12:37 --> ErrorException: Undefined variable $verdors
+[Method: GET, Route: vendor]
+in APPPATH\Views\vendor.php on line 245.
+ 1 APPPATH\Views\vendor.php(245): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $verdors', 'C:\\Project CI\\TugasBesarPWL\\app\\Views\\vendor.php', 245)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Project CI\\TugasBesarPWL\\app\\Views\\vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('vendor', [], true)
+ 5 APPPATH\Controllers\VendorController.php(14): view('vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VendorController->vendor()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Project CI\\TugasBesarPWL\\public\\index.php')
+CRITICAL - 2025-04-26 10:13:23 --> ErrorException: Undefined variable $verdors
+[Method: GET, Route: vendor]
+in APPPATH\Views\vendor.php on line 245.
+ 1 APPPATH\Views\vendor.php(245): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $verdors', 'C:\\Project CI\\TugasBesarPWL\\app\\Views\\vendor.php', 245)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Project CI\\TugasBesarPWL\\app\\Views\\vendor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('vendor', [], true)
+ 5 APPPATH\Controllers\VendorController.php(14): view('vendor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VendorController->vendor()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VendorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Project CI\\TugasBesarPWL\\public\\index.php')

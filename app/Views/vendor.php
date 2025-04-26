@@ -152,15 +152,17 @@
               data-accordion="false"
             >
               <li class="nav-header">MENU</li>
+
               <li class="nav-item">
-                <a href="/tender" class="nav-link">
-                <i class="nav-icon bi bi-grip-horizontal"></i>
+                <a href="./tender" class="nav-link">
+                  <i class="nav-icon bi bi-grip-horizontal"></i>
                   <p>Tender</p>
                 </a>
               </li>
+
               <li class="nav-item">
-                <a href="./vendor" class="nav-link">
-                  <i class="nav-icon bi bi-grip-horizontal"></i>
+                <a href="/vendor" class="nav-link active">
+                <i class="nav-icon bi bi-grip-horizontal"></i>
                   <p>Vendor</p>
                 </a>
               </li>
@@ -226,7 +228,7 @@
             
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Tabel Tender</h3>
+                <h3 class="card-title">Tabel Vendor</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -242,13 +244,13 @@
                   <tbody>
                   <?php
                   $no = 1;
-                  if (!empty($products) && is_array($products)) : ?>
-                    <?php foreach ($products as $product) : ?>
+                  if (!empty($vendors) && is_array($vendors)) : ?>
+                    <?php foreach ($vendors as $vendor) : ?>
                     <tr>
                       <td><?= $no++ ?></td>
-                      <td><?= esc($product['nama_vendor']) ?></td>
+                      <td><?= esc($vendor['nama_vendor']) ?></td>
                       <td>
-                        Rp <?= esc(number_format($product['price'], 2, ',', '.')) ?>
+                        Rp <?= esc(number_format($vendor['price'], 2, ',', '.')) ?>
                       </td>
                       <td>
                         <span class="badge bg-warning">Ubah</span><span class="badge bg-danger">Hapus</span>
