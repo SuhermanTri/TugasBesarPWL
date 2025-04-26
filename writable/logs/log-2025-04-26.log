@@ -1,0 +1,204 @@
+ERROR - 2025-04-26 08:10:47 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Project CI\TugasBesarPWL\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Project CI\TugasBesarPWL\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\Project CI\TugasBesarPWL\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Project CI\TugasBesarPWL\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Project CI\TugasBesarPWL\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Project CI\TugasBesarPWL\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Project CI\TugasBesarPWL\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Project CI\TugasBesarPWL\app\Controllers\Product.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\Project CI\TugasBesarPWL\system\CodeIgniter.php(933): App\Controllers\Product->index()
+#8 C:\Project CI\TugasBesarPWL\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#9 C:\Project CI\TugasBesarPWL\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Project CI\TugasBesarPWL\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Project CI\TugasBesarPWL\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Project CI\TugasBesarPWL\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Project CI\TugasBesarPWL\system\rewrite.php(44): require_once('C:\\Project CI\\T...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Project CI\TugasBesarPWL\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Project CI\TugasBesarPWL\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Project CI\TugasBesarPWL\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Project CI\TugasBesarPWL\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Project CI\TugasBesarPWL\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Project CI\TugasBesarPWL\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Project CI\TugasBesarPWL\app\Controllers\Product.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\Project CI\TugasBesarPWL\system\CodeIgniter.php(933): App\Controllers\Product->index()
+#7 C:\Project CI\TugasBesarPWL\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\Project CI\TugasBesarPWL\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Project CI\TugasBesarPWL\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Project CI\TugasBesarPWL\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Project CI\TugasBesarPWL\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Project CI\TugasBesarPWL\system\rewrite.php(44): require_once('C:\\Project CI\\T...')
+#13 {main}
+CRITICAL - 2025-04-26 08:10:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: product]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Product.php(12): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Project CI\\TugasBesarPWL\\public\\index.php')
+ERROR - 2025-04-26 08:12:33 --> mysqli_sql_exception: Table 'db_tender.products' doesn't exist in C:\Project CI\TugasBesarPWL\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Project CI\TugasBesarPWL\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Project CI\TugasBesarPWL\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Project CI\TugasBesarPWL\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Project CI\TugasBesarPWL\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Project CI\TugasBesarPWL\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Project CI\TugasBesarPWL\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Project CI\TugasBesarPWL\app\Controllers\Product.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\Project CI\TugasBesarPWL\system\CodeIgniter.php(933): App\Controllers\Product->index()
+#8 C:\Project CI\TugasBesarPWL\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#9 C:\Project CI\TugasBesarPWL\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Project CI\TugasBesarPWL\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Project CI\TugasBesarPWL\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Project CI\TugasBesarPWL\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Project CI\TugasBesarPWL\system\rewrite.php(44): require_once('C:\\Project CI\\T...')
+#14 {main}
+CRITICAL - 2025-04-26 08:12:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_tender.products' doesn't exist
+[Method: GET, Route: product]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Product.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Project CI\\TugasBesarPWL\\public\\index.php')
+CRITICAL - 2025-04-26 08:12:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_tender.products' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `products`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `products`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Product.php(12): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Project CI\\TugasBesarPWL\\public\\index.php')
+CRITICAL - 2025-04-26 08:12:33 --> [Caused by] mysqli_sql_exception: Table 'db_tender.products' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `products`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `products`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `products`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Product.php(12): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Project CI\\TugasBesarPWL\\public\\index.php')
+CRITICAL - 2025-04-26 08:16:37 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: product]
+in APPPATH\Views\index.php on line 25.
+ 1 APPPATH\Views\index.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Project CI\\TugasBesarPWL\\app\\Views\\index.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Project CI\\TugasBesarPWL\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Product.php(14): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Project CI\\TugasBesarPWL\\public\\index.php')
+CRITICAL - 2025-04-26 08:17:25 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: product]
+in APPPATH\Views\index.php on line 26.
+ 1 APPPATH\Views\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\Project CI\\TugasBesarPWL\\app\\Views\\index.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Project CI\\TugasBesarPWL\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Product.php(14): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Project CI\\TugasBesarPWL\\public\\index.php')
+CRITICAL - 2025-04-26 08:17:58 --> ErrorException: Undefined array key "price"
+[Method: GET, Route: product]
+in APPPATH\Views\index.php on line 27.
+ 1 APPPATH\Views\index.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price"', 'C:\\Project CI\\TugasBesarPWL\\app\\Views\\index.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Project CI\\TugasBesarPWL\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Product.php(14): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Project CI\\TugasBesarPWL\\public\\index.php')
+CRITICAL - 2025-04-26 08:46:16 --> ErrorException: Cannot declare class App\Controllers\Product, because the name is already in use
+[Method: GET, Route: product]
+in APPPATH\Models\ProductModel.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-04-26 08:46:38 --> ErrorException: Cannot declare class App\Controllers\Product, because the name is already in use
+[Method: GET, Route: product]
+in APPPATH\Models\ProductModel.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-04-26 09:36:00 --> Error: Class "App\Models\ProductModel" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Project CI\\TugasBesarPWL\\public\\index.php')
+CRITICAL - 2025-04-26 09:36:59 --> Error: Class "App\Models\ProductModel" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Project CI\\TugasBesarPWL\\public\\index.php')
+CRITICAL - 2025-04-26 09:38:00 --> Error: Class "App\Models\ProductModel" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Project CI\\TugasBesarPWL\\public\\index.php')
